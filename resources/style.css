@@ -95,7 +95,7 @@ a {
 }
 
 .btn {
-    width: 123px;
+    width: 8rem;
     height: 42px;
     border: 1px solid #0265C0;
     box-sizing: border-box;
@@ -107,7 +107,7 @@ a {
 .git {
     background: #0265C0;
     color: white;
-    font-size: .9rem;
+    font-size: 1.1rem;
     font-family: "Montserrat", sans-serif;
 }
 
