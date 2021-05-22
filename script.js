@@ -1,6 +1,6 @@
 const faders = document.querySelectorAll('.fade-in');
 const appearOptions = {
-    threshold: 1,
+    threshold: .5,
     rootMargin: "0px 0px -20px 0px"
 }; 
 
