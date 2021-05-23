@@ -102,6 +102,11 @@ a {
     border-radius: 10px; 
 }
 
+.flex-btns {
+    display: flex;
+    justify-content: space-around;
+}
+
 .learn-more,
 .live,
 .git {
@@ -109,6 +114,11 @@ a {
     color: white;
     font-size: 1.15rem;
     font-family: "Montserrat", sans-serif;
+}
+
+.live,
+.git {
+    width: 8rem;
 }
 
 .resume,
@@ -140,7 +150,7 @@ a {
 }
 
 .about p {
-    margin-top: 0; 
+    margin-top: 0;
 }
 
 .projects img {
