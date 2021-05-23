@@ -95,7 +95,7 @@ a {
 }
 
 .btn {
-    width: 8.5rem;
+    width: 10rem;
     height: 42px;
     border: 1px solid #0265C0;
     box-sizing: border-box;
@@ -126,6 +126,7 @@ a {
     color: white;
     clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
 }
+
 
 @media (max-width: 46.25em) {
     .about,
