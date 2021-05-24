@@ -6,6 +6,7 @@ body {
     font-size: 1.3125rem;
     min-width: 23.438;
     scroll-behavior: smooth;
+    height: auto;
 }
 /*margin resets*/
 body,
@@ -126,29 +127,11 @@ header {
     color: white;
     clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
 }
-/*projects*/ 
-.projects{
-    padding-bottom: 0;
-    padding-top: 0; 
-}
-.projects img {
-    filter: drop-shadow(6px 6px 0px #0265C0);
-    border-radius: 8px;
-}
 
-.projects a,
-.learn-more a {
-    color: white;
-}
-
-.projects h1,
-.projects h2, 
 .about h1 {
     text-align: center;
 }
-.projects h1 {
-    padding-top: 1rem;
-}
+
 /*contact*/
 .contact {
     background-color: #0265C0;
@@ -159,11 +142,133 @@ header {
     
 }
 
+.projects a,
+.learn-more a {
+    color: white;
+}
+
+.projects-title {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-top: 2em;
+    font-size: 1.3125em;
+}
+
+
+.card {
+    color: white;
+    background-size: cover; 
+    padding: 20rem 0 0rem; 
+    max-width: 35ch;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: auto;
+    transition: transform 500ms ease;
+}
+
+.card:hover, 
+.card:focus-within {
+    transform:scale(1.05);
+}
+
+.card-div {
+    padding-bottom: 3rem;
+}
+
+#rocketfinder {
+    background-image: url("/resources/images/RocketFinder.png");
+}
+
+#sunking {
+    background-image: url("/resources/images/Company\ Home\ Page.png");
+}
+
+#excursion {
+    background-image: url("/resources/images/Excursion.png");
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-content {
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / .75),
+        hsl(0 0% 0% / 1));
+    padding: 1.5rem;
+}
+
+@media (hover) {
+    .card-content {
+        transform: translateY(75%);
+        transition: transform 500ms ease;
+    }
+    .card:hover .card-content,
+    .card:focus-within .card-content{
+        transform: translateY(0);
+        transition-delay: 500ms; 
+    }
+
+    .card:focus-within .card-content {
+        transition-duration: 0ms;
+    }
+    .card:hover .card-title::after,
+    .card:focus-within .card-title::after {
+        transform: scaleX(1); 
+    }
+    .button:hover, 
+    .button:focus {
+        background-color: white;
+        color: black;
+    }
+
+    .card-title::after {
+        transform: scaleX(0);
+    }
+}
+
+
+
+.card-title {
+    position: relative;
+    width: max-content; 
+    padding-bottom: .5rem;
+}
+
+.card-title::after {
+    content: "";
+    position: absolute; 
+    height: 4px;
+    background: #0265C0;
+    left: calc(var(--padding) * -1);
+    bottom: 0;
+    width: calc(100% + var(--padding));
+    transform-origin: left;
+    transition: transform 500ms ease;
+}
+
+
+
+.button {
+    cursor: pointer; 
+    display: inline-block; 
+    text-decoration: none;
+    color: white; 
+    background-color: #0265C0;
+    padding: 0.5em 1.25em;
+    border-radius: 0.25em;
+}
+
+
 .contact {
     text-align: center;
 }
 /*media inquiries*/ 
-@media (min-width: 45em) {
+@media (min-width: 79rem) {
     .split {
         flex-direction: row;
     }

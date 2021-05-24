@@ -1,7 +1,7 @@
 const faders = document.querySelectorAll('.fade-in');
 const appearOptions = {
-    threshold: .5,
-    rootMargin: "0px 0px -20px 0px"
+    threshold: .2,
+    rootMargin: "0px 0px -30px 0px"
 }; 
 
 const appearOnScroll = new IntersectionObserver
