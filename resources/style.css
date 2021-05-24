@@ -177,15 +177,15 @@ header {
 }
 
 #rocketfinder {
-    background-image: url("resources/images/RocketFinder.png");
+    background-image: url("../resources/images/RocketFinder.png");
 }
 
 #sunking {
-    background-image: url("resources/images/Company\ Home\ Page.png");
+    background-image: url("../resources/images/Company\ Home\ Page.png");
 }
 
 #excursion {
-    background-image: url("resources/images/Excursion.png");
+    background-image: url("../resources/images/Excursion.png");
 }
 
 
