@@ -1,7 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Montserrat", sans-serif;
     font-size: 1.3125rem;
     min-width: 23.438;
+    scroll-behavior: smooth;
 }
 /*margin resets*/
 body,
@@ -99,6 +103,12 @@ a {
     flex-direction: column;
     align-items: center;
 }
+.screenshot {
+    height: 30rem;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
 /*spash page*/ 
 header {
     display: flex;
@@ -106,9 +116,6 @@ header {
     min-height: 100vh;
 }
 /*about*/ 
-.about img {
-    margin: auto; 
-}
 
 .about p {
     margin-top: 0;
@@ -120,10 +127,13 @@ header {
     clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
 }
 /*projects*/ 
+.projects{
+    padding-bottom: 0;
+    padding-top: 0; 
+}
 .projects img {
     filter: drop-shadow(6px 6px 0px #0265C0);
     border-radius: 8px;
-    margin-top: 4em;
 }
 
 .projects a,
@@ -135,6 +145,9 @@ header {
 .projects h2, 
 .about h1 {
     text-align: center;
+}
+.projects h1 {
+    padding-top: 1rem;
 }
 /*contact*/
 .contact {
@@ -150,7 +163,7 @@ header {
     text-align: center;
 }
 /*media inquiries*/ 
-@media (min-width: 40em) {
+@media (min-width: 45em) {
     .split {
         flex-direction: row;
     }
