@@ -177,15 +177,15 @@ header {
 }
 
 #rocketfinder {
-    background-image: url("/resources/images/RocketFinder.png");
+    background-image: url("resources/images/RocketFinder.png");
 }
 
 #sunking {
-    background-image: url("/resources/images/Company\ Home\ Page.png");
+    background-image: url("resources/images/Company\ Home\ Page.png");
 }
 
 #excursion {
-    background-image: url("/resources/images/Excursion.png");
+    background-image: url("resources/images/Excursion.png");
 }
 
 
@@ -231,8 +231,6 @@ header {
     }
 }
 
-
-
 .card-title {
     position: relative;
     width: max-content; 
@@ -251,8 +249,6 @@ header {
     transition: transform 500ms ease;
 }
 
-
-
 .button {
     cursor: pointer; 
     display: inline-block; 
@@ -262,7 +258,6 @@ header {
     padding: 0.5em 1.25em;
     border-radius: 0.25em;
 }
-
 
 .contact {
     text-align: center;
